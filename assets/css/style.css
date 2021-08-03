@@ -1,0 +1,133 @@
+/*****************************************************************************
+    Font: Karla
+    Color: #323A45 / #848484
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Rard Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    color: #323a45;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #323a45;
+    transition: opacity 0.5s;
+}
+
+a:hover {
+    opacity: 0.3;
+}
+/*****************************************************************************
+    Header / Navigation
+*/
+nav {
+    padding: 1% 10%;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 10fr 2fr 2fr 1fr;
+    justify-items: end;
+}
+nav ul li {
+    font-weight: 800;
+}
+nav ul li:first-of-type {
+    justify-self: start;
+    font-weight: 800;
+}
+nav ul li a {
+    font-size: 0.8em;
+}
+.logo {
+    font-weight: 800;
+    font-size: 1.1em;
+    justify-self: left;
+}
+
+/*****************************************************************************
+    Main / Articles
+*/
+main {
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4vmin 2vmin;
+}
+main > :nth-child(7n-6) {
+    width: 100%;
+    grid-column: 1 / span 3;
+}
+.article img {
+    width: 100%;
+    transition: opacity 0.5s;
+}
+.article img:hover {
+    opacity: 0.6;
+}
+.article figcaption {
+    padding-top: 1vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+}
+.article p {
+    padding-top: 0.5vh;
+    color: #323a45;
+    font-weight: 700;
+}
+.article p:nth-last-of-type(2) {
+    text-align: right;
+}
+.article p:last-of-type {
+    color: #848484;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+/*****************************************************************************
+    Footer / Contact, Newsletter, Social Media
+*/
+footer {
+    padding: 2% 10% 1%;
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: 0.8em;
+
+    display: grid;
+    grid-template-columns: 4fr 2fr 3fr 3fr;
+}
+footer h4 {
+    padding-bottom: 1.5vh;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+footer a {
+    font-weight: 800;
+}
+footer span {
+    font-weight: 900;
+}
+footer div:nth-of-type(3) li:first-of-type a {
+    font-weight: 600;
+}
+footer p:last-of-type {
+    color: #848484;
+    padding-top: 5vh;
+}
+
+/****************************************************************************/
