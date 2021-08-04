@@ -2,16 +2,21 @@ let menuVisible = false;
 function showHideMenu() {
 
     let hamburger = document.getElementById("hamburger");
+
+    // display: none means website is in desktop mode, so no need to toggle menu visibility
+
+    console.log(hamburger.style.display);
+    if (hamburger.style.display == "none")
+        return;
+
+
+
     let navigation = document.getElementById("navigation");
 
     // toggle menu visibility
     menuVisible = !menuVisible;
 
     if (menuVisible) {
-        console.log("menu is visible");
-        // z-index: 1;
-        // opacity: 1;
-
         hamburger.style.zIndex = -1;
         hamburger.style.opacity = 0;
 
@@ -19,15 +24,12 @@ function showHideMenu() {
         navigation.style.opacity = 1;
 
     } else {
-        console.log("menu is hidden");
-
         hamburger.style.zIndex = 1;
         hamburger.style.opacity = 1;
 
         navigation.style.zIndex = -1;
         navigation.style.opacity = 0;
     }
-
 }
 
 
