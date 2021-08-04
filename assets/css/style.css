@@ -1,69 +1,72 @@
-@media (min-width: 601px) {
-    /*****************************************************************************
+/*****************************************************************************
     Font: Karla
     Color: #323A45 / #848484
 */
 
-    @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-    /* Hard Reset*/
-    * {
-        margin: 0;
-        padding: 0;
-    }
+/* Hard Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    body {
-        font-family: "Karla", sans-serif;
-        color: #323a45;
-    }
-    ul {
-        list-style-type: none;
-    }
-    a {
-        text-decoration: none;
-        color: #323a45;
-        transition: opacity 0.5s;
-    }
-    a:hover {
-        opacity: 0.3;
-    }
+body {
+    font-family: "Karla", sans-serif;
+    color: #323a45;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #323a45;
+    transition: opacity 0.5s;
+}
+a:hover {
+    opacity: 0.3;
+}
 
-    /*****************************************************************************
-    Header / Navigation
-*/
-    nav {
-        padding: 1% 10%;
-        display: grid;
-        grid-template-columns: 2fr 4fr;
-    }
-
-    nav ul {
-        display: grid;
-        grid-template-columns: 4fr 2fr 1fr;
-        justify-items: end;
-    }
-    nav ul li {
-        font-weight: 800;
-    }
-    nav ul li:first-of-type {
-        font-weight: 800;
-    }
-    nav ul li a {
-        font-size: 0.8em;
-    }
+@media (min-width: 601px) {
+    /*************************************************************************
+        Header / Navigation
+    */
     .logo {
         font-weight: 800;
         font-size: 1.1em;
         justify-self: left;
     }
+    nav {
+        padding: 1% 10%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 
-    /*****************************************************************************
-    Main / Articles
-*/
+    #navigation {
+        display: grid;
+        grid-template-columns: 4fr 2fr 1fr;
+        justify-items: end;
+    }
+    #navigation li {
+        font-weight: 800;
+    }
+    #navigation li:first-of-type {
+        font-weight: 800;
+    }
+    #navigation li a {
+        font-size: 0.8em;
+    }
+    #hamburger {
+        display: none;
+    }
+
+    /*************************************************************************
+        Main / Articles
+    */
     main {
         padding: 2% 10%;
         display: grid;

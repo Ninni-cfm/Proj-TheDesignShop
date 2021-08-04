@@ -1,67 +1,61 @@
 @media (max-width: 600px) {
-    /*****************************************************************************
-    Font: Karla
-        Color: #323A45 / #848484
+    /*************************************************************************
+        Header / Navigation
     */
-
-    @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
-    /* Hard Reset*/
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        font-family: "Karla", sans-serif;
-        color: #323a45;
-    }
-    ul {
-        list-style-type: none;
-    }
-    a {
-        text-decoration: none;
-        color: #323a45;
-        transition: opacity 0.5s;
-    }
-    a:hover {
-        opacity: 0.3;
-    }
-
-    /*****************************************************************************
-    Header / Navigation
-*/
     nav {
-        padding: 1% 5vw;
-        text-align: left;
-    }
-    nav ul {
-        position: absolute;
-        right: 0;
-    }
-    nav ul li {
-        font-weight: 800;
-    }
-    nav ul li:first-of-type {
-        justify-self: start;
-        font-weight: 800;
-    }
-    nav ul li a {
-        font-size: 0.8em;
+        width: 100vw;
+        padding: 5vh 5vw;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
     }
     .logo {
         font-weight: 800;
         font-size: 1.1em;
+        width: 30%;
         justify-self: left;
     }
+    #navigation {
+        position: absolute;
+        right: 5vw;
 
-    /*****************************************************************************
-    Main / Articles
-*/
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    #navigation li {
+        font-size: 1.1em;
+        font-weight: 800;
+        text-align: right;
+    }
+    #navigation li:first-of-type {
+        justify-self: start;
+        font-weight: 800;
+    }
+    #navigation li a {
+        font-size: 0.8em;
+    }
+
+    #hamburger {
+        text-align: right;
+        padding-right: 10vw;
+        transition: opacity 1s;
+    }
+
+    /*
+    .hamburger:hover {
+        opacity: 0;
+        z-index: -1;
+    }
+    .hamburger:hover .navigation {
+        z-index: 1;
+        opacity: 1;
+    }
+    */
+
+    /*************************************************************************
+        Main / Articles
+    */
     main {
         width: auto;
         padding: 1vh 5vw;
@@ -99,9 +93,9 @@
         font-size: 0.95em;
     }
 
-    /*****************************************************************************
-    Footer / Contact, Newsletter, Social Media
-*/
+    /*************************************************************************
+        Footer / Contact, Newsletter, Social Media
+    */
     footer {
         padding: 2% 10% 1%;
         line-height: 1.8;
@@ -127,5 +121,5 @@
         padding-top: 5vh;
     }
 
-    /****************************************************************************/
+    /************************************************************************/
 }
